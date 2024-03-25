@@ -31,7 +31,7 @@ public class ArrayContest {
         }
         String[] array2 = new String[c];
         for (int j = 0, counter = 0; j < array.length; j++) {
-            if (array[j].contains("a") || array[j].contains("A")) {
+            if (array[j].toLowerCase().contains("a")) {
                 array2[counter] = array[j];
                 counter++;
             }
