@@ -10,7 +10,7 @@ public class Person {
     }
 
     public void setName(String name) {
-        if (name.length() >= 3 || name.length() <= 15){
+        if (name.length() > 3 || name.length() < 15){
         this.name = name;
         }
     }
@@ -30,7 +30,7 @@ public class Person {
     }
 
     public void setHeight(int height) {
-        if (height > 120 || height < 220) {
+        if (height >= 120 || height <= 220) {
             this.height = height;
         }
     }
