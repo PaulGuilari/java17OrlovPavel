@@ -1,6 +1,8 @@
-package lesson6.hw;
+package lesson7.hw;
 
 public class ArrayContest {
+    public static void main(String[] args) {
+    }
 
     // 1. Дан массив целых чисел. Вернуть массив только четных чисел.
     public static int[] filterIntArray(int[] array) {
