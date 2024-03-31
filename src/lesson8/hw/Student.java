@@ -4,11 +4,8 @@ public class Student {
     String name;
     int age;
     double averageValue;
-
     public Student() {
     }
-
-
     public Student(String name, int age, double averageValue) {
         this.name = name;
         this.age = age;
@@ -21,10 +18,7 @@ public class Student {
                 ", evmark=" + averageValue +
                 '}';
     }
-    public boolean checkMark(double averageValue){
-        this.averageValue = averageValue;
-        if (averageValue > 5.0){
-            return true;
-        } return false;
+    public boolean checkMark(){
+        return averageValue > 5.0;
     }
 }
