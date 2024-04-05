@@ -5,10 +5,12 @@ package lesson10.hw;
 // Additionally, I add a method called "play", which will print the message "Dog plays" on the screen.
 
 public class Dog extends Pet {
+
     public Dog(String name) {
-        this.name = name;
-        System.out.println( "I am dog and my name is: " + name);
+        super(name);
+        System.out.println("I am dog and my name is: " + name);
     }
+
     void play(){
         System.out.println("Dog plays");
     }

@@ -5,7 +5,7 @@ package lesson10.hw;
 public class Main {
     public static void main(String[] args) {
         Dog dog = new Dog("Pes");
-        System.out.println(dog.PAW);
+        System.out.println(dog.getPAW());
         Hamster hamster = new Hamster("Bob");
         hamster.sleep();
     }

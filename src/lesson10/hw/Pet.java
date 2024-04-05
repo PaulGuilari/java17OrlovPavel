@@ -7,12 +7,29 @@ package lesson10.hw;
 // I create a method "run", which will print the message "Pet runs" on the screen,
 // and a method "jump", which will print "Pet jumps".
 public class Pet extends Animal{
-    String name;
-    final int TAIL = 1;
-    final int PAW = 4;
+    private String name;
+    private final int TAIL = 1;
+    private final int PAW = 4;
+
+    public String getName() {
+        return name;
+    }
+
+    public int getTAIL() {
+        return TAIL;
+    }
+
+    public int getPAW() {
+        return PAW;
+    }
+
     public Pet() {
-        this.eyes = 2;
+        this.setEyes(2);
         System.out.println("I am Pet");
+    }
+
+    public Pet(String name) {
+        this.name = name;
     }
 
     void run(){
