@@ -1,5 +1,5 @@
 package lesson10.hw;
-
+//Pet is the child class of the Animal and parent clas fot the dog & hamster.
 public class Pet extends Animal{
     String name;
     final int TAIL = 1;

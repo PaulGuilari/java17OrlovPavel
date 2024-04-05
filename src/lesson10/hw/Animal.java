@@ -1,4 +1,5 @@
 package lesson10.hw;
+// Create an animal class. It is the parent class.
 
 public class Animal {
     String eyes;
