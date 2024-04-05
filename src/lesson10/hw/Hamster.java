@@ -1,5 +1,9 @@
 package lesson10.hw;
-//Hamster class is the child class of the pet.
+//I am creating a class Hamster, which is a child class of the Pet class.
+// When its constructor is called with the parameter name,
+// it should print the message "I am a hamster and my name is:" followed by the name.
+// Additionally, I need to add a method called "sleep",
+// which will print "Hamster is sleeping" on the screen.
 public class Hamster extends Pet{
 
     public Hamster(String name){

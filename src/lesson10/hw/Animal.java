@@ -1,8 +1,11 @@
 package lesson10.hw;
-// Create an animal class. It is the parent class.
+// Create a class Animal.
+// When its constructor is called, it should print "I am Animal" on the screen.
+// Inside the class, create a variable called "eyes" and methods called "eat",
+// which will print "Animal eats", and "drink", which will print "Animal drinks".
 
 public class Animal {
-    String eyes;
+    int eyes;
 
     public Animal() {
         System.out.println("I am Animal");
