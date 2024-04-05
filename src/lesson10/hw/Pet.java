@@ -10,10 +10,11 @@ public class Pet extends Animal{
     String name;
     final int TAIL = 1;
     final int PAW = 4;
-    public Pet(String name) {
+    public Pet() {
         this.eyes = 2;
         System.out.println("I am Pet");
     }
+
     void run(){
         System.out.println("Pet runs");
     }

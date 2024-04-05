@@ -6,6 +6,7 @@ package lesson10.hw;
 
 public class Animal {
     int eyes;
+    String name;
 
     public Animal() {
         System.out.println("I am Animal");
