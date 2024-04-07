@@ -6,7 +6,7 @@ public class Main {
         car.printInfo();
         car.go();
         Car car2 = new Car();
-        car2.calculateDistance(100,20);
+        car2.calculateDistance(100, 20);
         car2.calculateDistance(250);
         Transport plane = new Plane();
         plane.go();

@@ -1,4 +1,5 @@
 package lesson11.hw;
+
 /*
 * переопределите метод printInfo()
 * и go() в трех разных подклассах.
@@ -8,10 +9,9 @@ package lesson11.hw;
 * либо принимать (скорость, время) и результат будет dist = v * s
 *
 * */
-public class Car extends Transport{
-    private int v;
-    private int s;
-    private int dist;
+public class Car extends Transport {
+
+
     @Override
     public void printInfo() {
         System.out.println("this is a car");
@@ -23,12 +23,11 @@ public class Car extends Transport{
 
     }
 
-    public void calculateDistance (int v, int s){
+    public void calculateDistance(int v, int s) {
         System.out.println("Distance = " + (v * s));
     }
 
-    public void calculateDistance(int d){
-        dist = d;
+    public void calculateDistance(int dist) {
         System.out.println("Distance = " + dist);
     }
 
