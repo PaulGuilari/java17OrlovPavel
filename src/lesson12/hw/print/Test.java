@@ -11,8 +11,8 @@ public class Test {
         Magazine magazine1 = new Magazine("Burda");
         Magazine magazine2 = new Magazine("Rolling Stone");
         Printable[] printable = {book1, book2, magazine1, magazine2};
-        for (var printers : printable) {
-            printers.print();
+        for (var printer : printable) {
+            printer.print();
         }
         Book.printMagazines(printable);
         Magazine.printMagazines(printable);
