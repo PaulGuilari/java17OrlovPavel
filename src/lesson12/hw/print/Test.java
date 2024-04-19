@@ -14,7 +14,7 @@ public class Test {
         for (var printer : printable) {
             printer.print();
         }
-        Book.printMagazines(printable);
+        Book.printBooks(printable);
         Magazine.printMagazines(printable);
     }
 }

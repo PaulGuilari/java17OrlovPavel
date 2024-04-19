@@ -1,7 +1,7 @@
 package lesson12.hw.instrument;
 /*
 * Барабан содержит переменную размер
-* */
+*/
 
 public class Drum implements Instrument {
     private final int size;

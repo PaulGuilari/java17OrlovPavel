@@ -3,7 +3,7 @@ package lesson12.hw.print;
  * Определить класс Magazine, реализующий интерфейс Printable.
  * Создать статический метод printMagazines(Printable[] printable) в классе Magazine,
  * который выводит на консоль названия только журналов.
- * */
+ */
 
 public class Magazine implements Printable {
     private final String name;
