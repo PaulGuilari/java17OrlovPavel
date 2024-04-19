@@ -1,7 +1,7 @@
 package lesson12.hw.instrument;
 /*
-* Труба рсодержит переменную диамет
-* */
+ * Труба рсодержит переменную диамет
+ */
 
 public class Trumpet implements Instrument {
     private final double diameter;
