@@ -16,8 +16,14 @@ public class Test {
 
 
         Instrument[] instruments = {guitar1, guitar2, drum1, drum2, trumpet1, trumpet2};
-        for (var instrument : instruments) {
-            instrument.play();
+
+        // Обработка исключения ClassCastException
+        try {
+            for (var instrument : instruments) {
+                instrument.play();
+            }
+        } catch (ClassCastException e) {
+            e.printStackTrace();
         }
     }
 }

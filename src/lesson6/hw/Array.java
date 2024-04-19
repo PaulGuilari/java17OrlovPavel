@@ -19,19 +19,35 @@ public class Array {
         int[][] mat = new int[4][4];
         int count = 1;
         while (count <= 16) {
-            for (int i = 0; i < mat.length; i++) {
-                for (int j = 0; j < mat[i].length; j++) {
-                    mat[i][j] = count;
-                    count++;
+
+            // обернул цикл в try/catch
+            //если цикл выйдет за пределы массива, то ошибка будет обработана
+            try {
+                for (int i = 0; i < mat.length; i++) {
+                    for (int j = 0; j < mat[i].length; j++) {
+                        mat[i][j] = count;
+                        count++;
+                    }
                 }
+            } catch (IndexOutOfBoundsException e) {
+                String message = e.getMessage();
+                System.out.println(message);
             }
             System.out.println(Arrays.deepToString(mat));
         }
-        for (int j = 0; j < mat.length; j++) {
-            for (int i = 0; i < mat[j].length; i++) {
-                System.out.print(mat[j][i] + " ");
+
+        // обернул цикл в try/catch
+        //если цикл выйдет за пределы массива, выйдет сообщение и ошибка будет обработана
+        try {
+            for (int j = 0; j < mat.length; j++) {
+                for (int i = 0; i < mat[j].length; i++) {
+                    System.out.print(mat[j][i] + " ");
+                }
+                System.out.println("");
             }
-            System.out.println("");
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("index outside array bounds");
+            ;
         }
     }
 
