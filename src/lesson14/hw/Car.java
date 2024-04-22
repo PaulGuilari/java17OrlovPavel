@@ -29,9 +29,9 @@ public class Car {
         return fuelLevel;
     }
 
-    public void drive(int fuelLevel) {
+    public void drive() {
         if (fuelLevel == 0) {
-            throw new NotFuelException("Fuel level is " + fuelLevel);
+            throw new NotFuelException(fuelLevel);
         }
     }
 

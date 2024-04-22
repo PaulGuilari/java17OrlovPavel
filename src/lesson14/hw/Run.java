@@ -8,8 +8,8 @@ package lesson14.hw;
 
 public class Run {
     public static void main(String[] args) throws NotBeltException {
-        Car car = new Car("Porche", "Grey", 40);
-        car.drive(0);
+        Car car = new Car("Porche", "Grey", 0);
+        car.drive();
         car.safetyBelt(true);
     }
 

@@ -8,9 +8,10 @@ package lesson14.hw;
 public class NotFuelException extends RuntimeException {
 
     private String message;
+    private int fuelLevel;
 
-    public NotFuelException(String message) {
-        super(message);
+    public NotFuelException(int fuelLevel) {
+        super("Fuel level is " + fuelLevel);
     }
 
 
