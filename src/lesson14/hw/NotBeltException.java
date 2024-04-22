@@ -8,6 +8,6 @@ public class NotBeltException extends Exception {
     private String message;
 
     public NotBeltException(String message) {
-        super(message);
+        super("The Belt is not fastened");
     }
 }
