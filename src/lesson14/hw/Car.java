@@ -7,9 +7,9 @@ package lesson14.hw;
  * */
 
 public class Car {
-    private String name;
-    private String color;
-    private int fuelLevel;
+    private final String name;
+    private final String color;
+    private final int fuelLevel;
 
     public Car(String name, String color, int fuelLevel) {
         this.name = name;

@@ -7,12 +7,17 @@ package lesson14.hw;
  * */
 
 public class Run {
-    public static void main(String[] args) throws NotBeltException {
-        Car car = new Car("Porche", "Grey", 0);
+    public static void main(String[] args) {
+        Car car = new Car("Porche", "Grey", 60);
         car.drive();
-        car.safetyBelt(true);
-    }
 
+        try {
+            car.safetyBelt(false);
+        } catch (NotBeltException e) {
+            System.out.println("The Belt is not fastened");
+            ;
+        }
+    }
 
 
 }
