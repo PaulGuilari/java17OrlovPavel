@@ -10,13 +10,13 @@ public class Run {
     public static void main(String[] args) {
         Car car = new Car("Porche", "Grey", 50);
 
-
         try {
             car.drive();
-            car.safetyBelt(true);
-
         } catch (NotFuelException e) {
             System.out.println(e.getMessage());
+        }
+        try {
+            car.safetyBelt(true);
         } catch (NotBeltException e) {
             System.out.println("The Belt is not fastened");
         }
