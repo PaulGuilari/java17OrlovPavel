@@ -12,12 +12,11 @@ public class Run {
 
         try {
             car.drive();
+            car.safetyBelt(true);
         } catch (NotFuelException e) {
             System.out.println(e.getMessage());
         }
-        try {
-            car.safetyBelt(true);
-        } catch (NotBeltException e) {
+         catch (NotBeltException e) {
             System.out.println("The Belt is not fastened");
         }
     }
