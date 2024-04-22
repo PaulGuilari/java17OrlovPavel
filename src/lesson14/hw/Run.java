@@ -8,14 +8,17 @@ package lesson14.hw;
 
 public class Run {
     public static void main(String[] args) {
-        Car car = new Car("Porche", "Grey", 60);
-        car.drive();
+        Car car = new Car("Porche", "Grey", 50);
+
 
         try {
-            car.safetyBelt(false);
+            car.drive();
+            car.safetyBelt(true);
+
+        } catch (NotFuelException e) {
+            System.out.println(e.getMessage());
         } catch (NotBeltException e) {
             System.out.println("The Belt is not fastened");
-            ;
         }
     }
 
