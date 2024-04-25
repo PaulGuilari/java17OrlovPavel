@@ -44,8 +44,10 @@ public class Main {
         System.out.println(carList2.get(4)); // returns the object at the specified index
 
         carList2.remove(car3); // delete an element at the specified index
+        System.out.println(carList2);
 
-        carList2.lastIndexOf(car2); // return the index of the specified element from the end of the list (return int)
+        System.out.println(carList2.lastIndexOf(car2)); // return the index of the specified element from the end of the list (return int)
+
 
         System.out.println(carList2.isEmpty()); // check if the list is not empty (return boolean)
 
