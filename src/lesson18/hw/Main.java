@@ -1,6 +1,7 @@
 package lesson18.hw;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 /*
@@ -31,9 +32,12 @@ public class Main {
         mapOfToys.put(toy4.getName(), toy4);
         mapOfToys.put(toy5.getName(), toy5);
 
+       /* printMapLambda(mapOfToys);
         printKey(mapOfToys);
         printValue(mapOfToys);
         printMap(mapOfToys);
+        iteratorPrintMap(mapOfToys);
+        */
     }
 
     public static void printKey(HashMap<String, Toy> e) {
@@ -48,10 +52,23 @@ public class Main {
         }
     }
 
+    public static void iteratorPrintMap(HashMap<String, Toy> map) {
+        Iterator iterator = map.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry count = (Map.Entry) iterator.next();
+            System.out.println(count.getKey());
+            System.out.println(count.getValue());
+        }
+    }
+
     public static void printMap(HashMap<String, Toy> e) {
         for (Map.Entry entry : e.entrySet()) {
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
         }
+    }
+
+    public static void printMapLambda(HashMap<String, Toy> e) {
+        e.forEach((k, v) -> System.out.printf("%s :%s \n", k, v));
     }
 }

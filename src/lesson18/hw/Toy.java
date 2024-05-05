@@ -34,7 +34,7 @@ public class Toy {
         return "Toy {" + "\n" +
                 " name: '" + name + '\'' + "\n" +
                 " weight: " + weight + " gr" + "\n" +
-                " color: " + color + '\'' + "\n" +
+                " color: " + color + "\n" +
                 " price: " + price + " USD" +
                 '}';
     }
