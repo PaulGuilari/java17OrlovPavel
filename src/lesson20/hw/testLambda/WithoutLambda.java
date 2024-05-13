@@ -1,11 +1,9 @@
 package lesson20.hw.testLambda;
-
-import lesson20.hw.testLambda.Animal;
-import lesson20.hw.testLambda.CheckIfHopper;
-import lesson20.hw.testLambda.CheckTrait;
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+/*
+* Создаём коллекцию Animal и при помощи метода print - выводим содержимое листа в консоль
+* При помощи анонимного класса checkIfHopper реализуем test а в нём canHop
+* */
 
 public class WithoutLambda {
     public static void main(String[] args) {
@@ -14,16 +12,21 @@ public class WithoutLambda {
         animals.add(new Animal("Kangaroo", true, false));
         animals.add(new Animal("Rabbit", true, false ));
         animals.add(new Animal("Turtle", false, true));
+        CheckTrait checkIfHopper = new CheckTrait() {
+            @Override
+            public boolean test (Animal a){
+                return a.canHop();
+            }
+        };
 
-        print(animals, new CheckIfHopper());
+        print(animals,checkIfHopper);
     }
 
     private static void print(List<Animal>animals, CheckTrait checker){
         for (Animal animal: animals){
-            if (checker.test(animal)){
-                System.out.print(animal + " ");
+            if (!checker.test(animal)){
+                System.out.println(animal + " ");
             }
-            System.out.println();
         }
     }
 }

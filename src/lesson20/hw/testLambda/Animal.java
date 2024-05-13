@@ -1,4 +1,8 @@
 package lesson20.hw.testLambda;
+/*
+* Создаём класс Animal с темя полями (name (String), canHop (boolean), canSwim (boolean))
+* Необходимо создать два метода с возвращаемым типом boolean
+* */
 
 public class Animal {
     private String name;
